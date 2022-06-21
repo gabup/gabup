@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+  font-family: 'Open Sans', sans-serif;
+  padding: 3em;
+}
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.65em 1em;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+
+a {
+ color: #fff;
+ font-size: 1em;
+ font-weight: bold;
+}
+
+a:hover {
+color: #45ffbc;
+}
+
+.title{
+ color: #fff;
+ font-size: 3em;
+ text-align: center;
+ padding-bottom: 30px;
+ font-weight: bold;
+}
+
+.lButton{
+  font-size: 1em;
+  padding: 7px;
+  cursor: pointer;
+  color: #000000;
+  background: #fff;
+  border-radius: 0.25em;
+  text-decoration: none;
+}
+.lButton:hover {
+    color: #000000;
+    font-weight: bold;
+}
+

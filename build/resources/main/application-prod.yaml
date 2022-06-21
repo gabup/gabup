@@ -1,0 +1,7 @@
+spring:
+  database-url: ${DATABASE_URL}
+  datasource:
+  jpa:
+    database-platform: "org.hibernate.dialect.PostgreSQLDialect"
+    hibernate:
+      ddl-auto: "update"

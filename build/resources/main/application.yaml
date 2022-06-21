@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: ${SPRING_PACTIVE:dev}
+  servlet:
+    multipart:
+      enabled: true
+#      file-size-threshold: 2KB
+      max-file-size: 300MB
+      max-request-size: 320MB
+
+server:
+  port: ${PORT:8080}
