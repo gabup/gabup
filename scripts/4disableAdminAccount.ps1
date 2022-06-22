@@ -1,0 +1,1 @@
+net user $env:UserName /active:no
